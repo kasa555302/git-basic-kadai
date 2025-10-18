@@ -1,0 +1,16 @@
+# 課題005 実行コマンド履歴
+
+mkdir git_kadai5
+cd git_kadai5
+git init
+
+echo "Hello Git" > hello.txt
+git add hello.txt
+git commit -m "First commit"
+
+git log
+
+git config --global alias.co checkout
+git co -b new-branch
+git branch
+git co main
