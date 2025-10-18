@@ -1,0 +1,22 @@
+# Step1. ローカルリポジトリを作成
+mkdir git_challenge
+cd git_challenge
+git init
+
+# Step2. hello_world.txt を作成
+echo "Hello, World!" >> hello_world.txt
+
+# Step3-1. 1回目のコミット
+git add hello_world.txt
+git commit -m "hello_world.txtを追加"
+
+# hello_world.txt に日本語を追記
+echo "こんにちは、世界！" >> hello_world.txt
+
+
+# Step3-2. 2回目のコミット
+git add hello_world.txt
+git commit -m "日本語訳を追記"
+
+# Step4. コミット履歴を表示
+git log --oneline
